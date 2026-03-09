@@ -1,66 +1,64 @@
 // Tree
-import { createTreeSVG, defaultTreeOpts } from "./lib/tree_setup.js";
-import { initTree } from "./lib/tree_chart.js";
+import { create_tree_svg, default_tree_opts } from "./lib/tree_setup.js";
+import { init_tree } from "./lib/tree_chart.js";
 
 // PCA
 import {
-  BASE_COLORS, ALL_SHAPES, buildColorScale, buildGroupShapeScale,
-  extractMeta, pointEncodings, buildScales
+  build_color_scale, build_group_shape_scale,
+  extract_meta, point_encodings, build_scales
 } from "./lib/pca_scales.js";
-import { isInBrush, drawAxes, drawPoints, drawLegend } from "./lib/pca_drawing.js";
-import { createMultiBrush } from "./lib/pca_brush.js";
-import { initPCA } from "./lib/pca_chart.js";
+import { is_in_brush, draw_axes, draw_points, draw_legend } from "./lib/pca_drawing.js";
+import { create_multi_brush } from "./lib/pca_brush.js";
+import { init_pca } from "./lib/pca_chart.js";
 
 // Timesearcher
-import { createSVG } from "./lib/ts_svg.js";
-import { createScales, createColorScale } from "./lib/ts_scales.js";
-import { createAxes, createAxisLabels, createTitle } from "./lib/ts_axes.js";
+import { create_svg } from "./lib/ts_svg.js";
+import { create_scales, create_color_scale } from "./lib/ts_scales.js";
+import { create_axes, create_axis_labels, create_title } from "./lib/ts_axes.js";
 import {
-  buildSeries, createLineGenerator, createLines, createDots,
-  setupLineHover, updateLineSelection, resetLines, formatSelectionOutput,
-  dayColorScale
+  build_day_color_scale,
+  build_series, create_line_generator, create_lines, create_dots,
+  setup_line_hover, update_line_selection, reset_lines, format_selection_output
 } from "./lib/ts_lines.js";
-import { createTimeboxManager, seriesPassesThrough } from "./lib/ts_timebox.js";
-import { createAbundanceTimesearcher } from "./lib/ts_chart.js";
+import { create_timebox_manager, series_passes_through } from "./lib/ts_timebox.js";
+import { create_abundance_timesearcher } from "./lib/ts_chart.js";
 
 export {
   // Tree
-  createTreeSVG,
-  defaultTreeOpts,
-  initTree,
+  create_tree_svg,
+  default_tree_opts,
+  init_tree,
 
   // PCA
-  BASE_COLORS,
-  ALL_SHAPES,
-  buildColorScale,
-  buildGroupShapeScale,
-  extractMeta,
-  pointEncodings,
-  buildScales,
-  isInBrush,
-  drawAxes,
-  drawPoints,
-  drawLegend,
-  createMultiBrush,
-  initPCA,
+  build_color_scale,
+  build_group_shape_scale,
+  extract_meta,
+  point_encodings,
+  build_scales,
+  is_in_brush,
+  draw_axes,
+  draw_points,
+  draw_legend,
+  create_multi_brush,
+  init_pca,
 
   // Timesearcher
-  createSVG,
-  createScales,
-  createColorScale,
-  createAxes,
-  createAxisLabels,
-  createTitle,
-  buildSeries,
-  createLineGenerator,
-  createLines,
-  createDots,
-  setupLineHover,
-  updateLineSelection,
-  resetLines,
-  formatSelectionOutput,
-  dayColorScale,
-  createTimeboxManager,
-  seriesPassesThrough,
-  createAbundanceTimesearcher
+  create_svg,
+  create_scales,
+  create_color_scale,
+  create_axes,
+  create_axis_labels,
+  create_title,
+  build_day_color_scale,
+  build_series,
+  create_line_generator,
+  create_lines,
+  create_dots,
+  setup_line_hover,
+  update_line_selection,
+  reset_lines,
+  format_selection_output,
+  create_timebox_manager,
+  series_passes_through,
+  create_abundance_timesearcher
 };
