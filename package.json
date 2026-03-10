@@ -14,7 +14,7 @@
   "author": "Kris Sankaran",
   "license": "ISC",
   "scripts": {
-    "build": "esbuild index.js --bundle --outfile=dist/phylotime.min.js",
+    "build": "esbuild index.js --bundle --outfile=dist/phylotime.min.js --format=iife --global-name=phylotime",
     "gbuild": "esbuild index.js --bundle --outfile=dist/phylotime-R.min.js --format=iife --global-name=phylotime --minify"
   },
   "devDependencies": {
